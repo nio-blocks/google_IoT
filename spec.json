@@ -1,0 +1,72 @@
+{
+  "nio/GoogleIoTMQTTPublish": {
+    "version": "1.0.0",
+    "description": "Block to publish to Google IoT's cloud broker.",
+    "categories": [
+      "Communication"
+    ],
+    "properties": {
+      "cert_path": {
+        "title": "Certificate Path",
+        "type": "FileType",
+        "description": "Path to file containing certifications.",
+        "default": "[[PROJECT_ROOT]]/etc/cert.pem"
+      },
+      "data_to_publish": {
+        "title": "Data to Publish",
+        "type": "Type",
+        "description": "Message to send over an MQTT topic.",
+        "default": "{{ $text }}"
+      },
+      "device_id": {
+        "title": "Device Identifier",
+        "type": "StringType",
+        "description": "Device Identifier",
+        "default": ""
+      },
+      "keep_alive": {
+        "title": "Keep Alive",
+        "type": "StringType",
+        "description": "Maximum period in seconds between communications with the broker. If no other messages are being exchanged, this controls the rate at which the client will send ping messages to the broker",
+        "default": "5"
+      },
+      "private_key_path": {
+        "title": "Private Key Path",
+        "type": "FileType",
+        "description": "Path to file containing AWS private key",
+        "default": "[[PROJECT_ROOT]]/etc/private_key.pem"
+      },
+      "project_id": {
+        "title": "Project Identifier",
+        "type": "StringType",
+        "description": "Project Identifier",
+        "default": ""
+      },
+      "project_region": {
+        "title": "Project Region",
+        "type": "StringType",
+        "description": "Project Region",
+        "default": ""
+      },
+      "registry_id": {
+        "title": "Registry Identifier",
+        "type": "StringType",
+        "description": "Registry Identifier",
+        "default": ""
+      },
+      "topic": {
+        "title": "Topic",
+        "type": "StringType",
+        "description": "MQTT topic to publish to.",
+        "default": null
+      }
+    },
+    "inputs": {
+      "default": {
+        "description": "Any list of signals."
+      }
+    },
+    "outputs": {},
+    "commands": {}
+  }
+}
