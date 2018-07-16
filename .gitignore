@@ -54,3 +54,6 @@ docs/_build/
 
 # vim swap file
 *.swp
+
+#testing
+.pytest_cache
