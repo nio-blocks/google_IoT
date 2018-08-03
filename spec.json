@@ -1,6 +1,6 @@
 {
   "nio/GoogleIoTMQTTPublish": {
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Block to publish to Google IoT's cloud broker.",
     "categories": [
       "Communication"

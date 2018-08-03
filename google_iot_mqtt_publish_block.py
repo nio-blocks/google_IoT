@@ -7,7 +7,7 @@ class GoogleIoTMQTTPublish(GoogleIoTMQTTBase, TerminatorBlock):
     """A publisher block for the MQTT protocol that is used by google IoT.
     This block will publish messages to a topic."""
 
-    version = VersionProperty("1.0.0")
+    version = VersionProperty("1.0.1")
     topic = StringProperty(title="Topic", default="state",
                            allow_none=False, order=1)
     data_to_publish = Property(title="Data to Publish",
