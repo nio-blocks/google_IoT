@@ -10,7 +10,7 @@
         "title": "Certificate Path",
         "type": "FileType",
         "description": "Path to file containing certifications.",
-        "default": "[[PROJECT_ROOT]]/etc/cert.pem"
+        "default": "[[PROJECT_ROOT]]/etc/google_iot_cert.pem"
       },
       "data_to_publish": {
         "title": "Data to Publish",
@@ -19,28 +19,28 @@
         "default": "{{ $text }}"
       },
       "device_id": {
-        "title": "Device Identifier",
+        "title": "Device Id",
         "type": "StringType",
         "description": "Device Identifier",
-        "default": ""
+        "default": null
       },
       "keep_alive": {
         "title": "Keep Alive",
-        "type": "StringType",
+        "type": "IntType",
         "description": "Maximum period in seconds between communications with the broker. If no other messages are being exchanged, this controls the rate at which the client will send ping messages to the broker",
-        "default": "5"
+        "default": 10
       },
       "private_key_path": {
         "title": "Private Key Path",
         "type": "FileType",
         "description": "Path to file containing AWS private key",
-        "default": "[[PROJECT_ROOT]]/etc/private_key.pem"
+        "default": "[[PROJECT_ROOT]]/etc/google_iot_rsa_private.pem"
       },
       "project_id": {
-        "title": "Project Identifier",
+        "title": "Project Id",
         "type": "StringType",
         "description": "Project Identifier",
-        "default": ""
+        "default": null
       },
       "project_region": {
         "title": "Project Region",
@@ -49,16 +49,16 @@
         "default": ""
       },
       "registry_id": {
-        "title": "Registry Identifier",
+        "title": "Registry Id",
         "type": "StringType",
         "description": "Registry Identifier",
-        "default": ""
+        "default": null
       },
       "topic": {
         "title": "Topic",
         "type": "StringType",
         "description": "MQTT topic to publish to.",
-        "default": null
+        "default": "state"
       }
     },
     "inputs": {
