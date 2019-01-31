@@ -33,7 +33,7 @@
       "private_key_path": {
         "title": "Private Key Path",
         "type": "FileType",
-        "description": "Path to file containing AWS private key",
+        "description": "Path to file containing GCP private key",
         "default": "[[PROJECT_ROOT]]/etc/google_iot_rsa_private.pem"
       },
       "project_id": {
