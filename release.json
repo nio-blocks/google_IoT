@@ -2,6 +2,6 @@
   "nio/GoogleIoTMQTTPublish": {
     "language": "Python",
     "url": "git://github.com/nio-blocks/google_IoT.git",
-    "version": "1.0.1"
+    "from_python": "google_iot_mqtt_publish_block.GoogleIoTMQTTPublish"
   }
 }
